@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Promptomatic</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main-container">
+  <div class="header">
+    <h1>Promptastik by Plaiful</h1>
+    <p>Bikin prompt semudah klak klik.</p>
+  </div>
+  <div class="tabs">
+    <button class="tab-button active" data-category="people">Fotografi</button>
+    <button class="tab-button" data-category="illustrations">Ilustrasi</button>
+  </div>
+  <div class="controls-container">
+    <div class="controls" data-category="people">
+      <!-- Controls for Photos of People -->
+    </div>
+    <div class="controls" data-category="illustrations" style="display: none;">
+      <!-- Controls for Illustrations will be dynamically added here -->
+    </div>
+  </div>
+
+  <div class="output-container">
+    <div class="output">
+      <input type="text" id="prompt-output" readonly />
+      <button id="randomize-btn"><i class="ph ph-shuffle"></i></button>
+      <button id="copy-btn"><i class="ph ph-copy"></i></button>
+    </div>
+  </div>
+  <div id="toast" class="toast">Copied</div>
+</div>
+<div class="footer">
+  <a href="https://www.lummi.ai" target="_blank">
+    <i class="ph ph-download-simple"></i>
+    Get curated free pics with Lummi
+  </a>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/@phosphor-icons/web'></script>
+<script src='https://renaisans.id/wp-content/themes/montoya/js/promptData.js'></script>
+<script src='https://renaisans.id/wp-content/themes/montoya/js/illustrationsData.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
